@@ -1,6 +1,8 @@
 {
   "usingComponents": {
     "mp-tabbar": "weui-miniprogram/tabbar/tabbar",
-    "mp-searchbar": "weui-miniprogram/searchbar/searchbar"
+    "mp-searchbar": "weui-miniprogram/searchbar/searchbar",
+
+    "component_home": "/pages/component/home/home"
   }
 }

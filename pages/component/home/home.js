@@ -21,9 +21,7 @@ Component({
  /* 组件声明周期函数 */
  lifetimes: {
   attached: function () {
-    this.setData({
-      search: this.search.bind(this)
-   })
+
   },
   moved: function () {
 
@@ -37,20 +35,10 @@ Component({
    * 组件的方法列表
    */
   methods: {
-    search: function (value) {
-      return new Promise((resolve, reject) => {
-          setTimeout(() => {
-              resolve([{text: '搜索结果', value: 1}, {text: '搜索结果2', value: 2}])
-          }, 200)
-      })
-    },
-    selectResult: function (e) {
-        console.log('select result', e.detail)
-    },
-    suo: function (e) {
+    ToSearchDetails:()=>{
       wx.navigateTo({
-       url: '../../test/test',
+        url: '/pages/searchPage/searchPage',
       })
-    },
+    }
   }
 })
